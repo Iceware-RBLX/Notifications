@@ -1,5 +1,3 @@
-local Notify = loadstring(game:HttpGet("https://raw.githubusercontent.com/Iceware-RBLX/IceWare-Notification-Library/refs/heads/main/Notif.lua"))()
-Notify:Push("Waiting for game to load...", 4, "Notification", "rbxassetid://70856241901857")
 local Client = game:GetService("Players").LocalPlayer
 local Camera = game:GetService("Workspace").CurrentCamera
 local RunService = game:GetService("RunService")
