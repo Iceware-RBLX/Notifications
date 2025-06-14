@@ -5,40 +5,39 @@ local TS = game:GetService("TweenService")
 
 local default_properties = {
 	Frame = {
-		BackgroundColor3 = Color3.new(1, 1, 1),
+		BackgroundColor3 = Color3.fromHex("FFFFFF"),
 		BorderSizePixel = 0,
-		Size = UDim2.new(0, 300, 0, 100),
-		AnchorPoint = Vector2.new(1, 1),
-		BorderColor3 = Color3.new(0, 0, 0),
+		Size = UDim2.fromOffset(100, 100),
 	},
 	TextLabel = {
 		BackgroundTransparency = 1,
-		FontFace = Font.new("rbxassetid://12187365364", Enum.FontWeight.SemiBold, Enum.FontStyle.Normal),
+		FontFace = Font.fromId(12187365364, Enum.FontWeight.Medium, Enum.FontStyle.Normal),
 		TextSize = 16,
 		Text = "Label",
-		Size = UDim2.new(1, 0, 1, 0),
-		TextColor3 = Color3.new(1, 1, 1),
-		TextXAlignment = Enum.TextXAlignment.Left,
-		TextYAlignment = Enum.TextYAlignment.Top,
-		AutomaticSize = Enum.AutomaticSize.Y,
-		BorderSizePixel = 0,
-		BorderColor3 = Color3.new(0, 0, 0),
+		Size = UDim2.fromOffset(100, 30),
+		TextColor3 = Color3.fromHex("000000"),
+	},
+	TextButton = {
+		FontFace = Font.fromId(12187365364, Enum.FontWeight.Medium, Enum.FontStyle.Normal),
+		TextSize = 16,
+		Text = "Button",
+		Size = UDim2.fromOffset(100, 30),
+		TextColor3 = Color3.fromHex("000000"),
+	},
+	TextBox = {
+		FontFace = Font.fromId(12187365364, Enum.FontWeight.Medium, Enum.FontStyle.Normal),
+		TextSize = 16,
+		PlaceholderText = "TextBox",
+		Size = UDim2.fromOffset(100, 30),
+		TextColor3 = Color3.fromHex("000000"),
 	},
 	ScrollingFrame = {
 		AutomaticCanvasSize = Enum.AutomaticSize.Y,
 		CanvasSize = UDim2.new(0, 0, 0, 0),
-		ScrollBarThickness = 3,
+		ScrollBarThickness = 0,
 		BackgroundTransparency = 1,
-		Active = true,
-		BorderSizePixel = 0,
-		BackgroundColor3 = Color3.new(1, 1, 1),
-		Size = UDim2.new(0.9, 0, 0.06, 42),
-		ScrollBarImageColor3 = Color3.new(0, 0, 0),
-		BorderColor3 = Color3.new(0, 0, 0),
-		Position = UDim2.new(0, 15, 0, 40),
 	},
 }
-
 
 
 local function create(className: string, instanceProperties, children): Instance
