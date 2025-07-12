@@ -12,7 +12,7 @@
 
 **1.** Load the library:
 ```lua
-local Notify = loadstring(game:HttpGet("https://raw.githubusercontent.com/Iceware-RBLX/IceWare-Notification-Library/refs/heads/main/Notif.lua"))()
+local Notify = loadstring(game:HttpGet("https://raw.githubusercontent.com/Iceware-RBLX/Notifications/refs/heads/main/Notif.lua"))()
 ```
 
 **2.** Push a notification:
